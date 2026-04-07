@@ -1,56 +1,5 @@
 import numpy as np
 
-def indexSort(vector, size):
-	iVec=[0]*size
-	temp=np.copy(vector)
-	for j in range(0,size):
-		minValue=1e10
-		for i in range(0,size):
-			if temp[i]<minValue :
-				minValue=temp[i]
-				iVec[j]=int(i)
-		temp[iVec[j]]=1e10
-	return iVec
-
-#same as np.mean
-def averagePop(y,size):
-	average = 0
-	averageFactor = 1.0 / size
-
-	i = size - 1
-	while i >= 0: 
-		average = average+y[i] * averageFactor
-		i=i-1
-	return average
-	
-#same as np.std
-def standardDeviationPop(y, size, average, averageFactor):
-	# Determine standard deviation.
-	standardDeviation = 0
-	i = size - 1
-	while i >= 0: 
-		diff = y[i] - average
-		standardDeviation =standardDeviation+ diff * diff * averageFactor
-		i=i-1
-	standardDeviation = np.sqrt(standardDeviation)
-	return standardDeviation
-
-#same as:
-	#import scipy.stats as stats
-	#stats.zscore(ytrain)
-def zscoreNormal(average , standardDeviation, y, size):
-	#Scale data.
-	offset = average
-	scaleFactor = standardDeviation
-	yNorm=np.zeros(size)
-	
-	i = size - 1
-	while i >= 0: 
-		yNorm[i] = (y[i] - offset) / scaleFactor
-		i=i-1
-
-	return yNorm
-
 def makeNoiseMatrix(n, randomVector, constant):
 	I=np.zeros((n,n))
 	for i in range(0,n):

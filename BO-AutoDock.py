@@ -1,13 +1,9 @@
 import numpy as np
 import cma
-from scipy.optimize import minimize
-from scipy.optimize import Bounds
 from testFunctions import * 
 from mathFunctions import * 
-from gaussian import * 
 import sys
 from ctypes import *
-# Load DLL into memory.
 from scipy.stats import qmc
 import time
 from pandas import read_csv
@@ -174,9 +170,9 @@ def mainTest():
 		
 		#hllDll.showMatrix(xPoints, c_int(n_points), c_int(Dimension))
 		
-# (int n_points, int Dimension, int threadsParallel, double** xtrain,
-	# double* ytrain, int subset, int tries, int method, int typeKernel, double bestValue,
-	# int evalsMethod, int runName, double noiseLevel);
+		# (int n_points, int Dimension, int threadsParallel, double** xtrain,
+		# double* ytrain, int subset, int tries, int method, int typeKernel, double bestValue,
+		# int evalsMethod, int runName, double noiseLevel);
 		
 		
 		result=hllDll.getNextPoint(c_int(n_points), c_int(Dimension), c_int(threadsParallel), xPoints,
