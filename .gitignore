@@ -4,3 +4,4 @@ __pycache__/
 *.par
 *.err
 *_output.txt
+*_outputTime.txt
