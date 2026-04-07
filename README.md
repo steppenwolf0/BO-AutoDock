@@ -19,9 +19,6 @@ In the base folder:
   vina.exe
   vina_split.exe
 
-- Perl script:
-  runVina.pl
-
 AutoDock Vina executables can be downloaded from:
 https://vina.scripps.edu/downloads/
 --------------------------------------------------------------------

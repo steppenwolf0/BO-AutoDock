@@ -118,7 +118,7 @@ def extract_mean_from_affinity_summary(summary_path: Path) -> float:
 def mainPipeline(base_dir="base",
          run_id=0,
          run_prefix="run",
-         perl_script="runVina.pl",
+         vina_script="runVina.py",
          read_results_script="readResults.py",
          conf_name="conf_vs.txt",
          summary_name="affinity_summary.txt",
@@ -149,11 +149,11 @@ def mainPipeline(base_dir="base",
     if not receptor_path.exists():
         print("Warning: receptor file not found: " + str(receptor_path.resolve()))
 
-    # Run perl script
-    perl_path = run_path / perl_script
-    if not perl_path.exists():
-        raise FileNotFoundError("Perl script not found: " + str(perl_path.resolve()))
-    run_command(["perl", perl_script], cwd=str(run_path))
+    # Run vina script
+    vina_path = run_path / vina_script
+    if not vina_path.exists():
+        raise FileNotFoundError("Vina script not found: " + str(vina_path.resolve()))
+    run_command([sys.executable, vina_script], cwd=str(run_path))
 
     # Run readResults.py (creates affinity_summary.txt)
     rr_path = run_path / read_results_script
