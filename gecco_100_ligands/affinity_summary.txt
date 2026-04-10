@@ -1,0 +1,113 @@
+Docking affinity summary (best = most negative)
+============================================================
+
+Idx  File                       BestAffinity  Status
+------------------------------------------------------------
+  1  res1.pdbqt_log.log               -6.100  OK
+  2  res2.pdbqt_log.log               -7.400  OK
+  3  res3.pdbqt_log.log               -6.400  OK
+  4  res4.pdbqt_log.log               -6.600  OK
+  5  res5.pdbqt_log.log               -6.200  OK
+  6  res6.pdbqt_log.log               -6.600  OK
+  7  res7.pdbqt_log.log               -6.500  OK
+  8  res8.pdbqt_log.log               -6.100  OK
+  9  res9.pdbqt_log.log               -7.000  OK
+ 10  res10.pdbqt_log.log              -7.000  OK
+ 11  res11.pdbqt_log.log              -5.900  OK
+ 12  res12.pdbqt_log.log              -6.600  OK
+ 13  res13.pdbqt_log.log              -6.700  OK
+ 14  res14.pdbqt_log.log              -6.000  OK
+ 15  res15.pdbqt_log.log              -6.700  OK
+ 16  res16.pdbqt_log.log              -7.500  OK
+ 17  res17.pdbqt_log.log              -6.700  OK
+ 18  res18.pdbqt_log.log              -6.100  OK
+ 19  res19.pdbqt_log.log              -6.200  OK
+ 20  res20.pdbqt_log.log              -5.800  OK
+ 21  res21.pdbqt_log.log              -6.800  OK
+ 22  res22.pdbqt_log.log              -7.700  OK
+ 23  res23.pdbqt_log.log              -6.100  OK
+ 24  res24.pdbqt_log.log              -6.200  OK
+ 25  res25.pdbqt_log.log              -6.700  OK
+ 26  res26.pdbqt_log.log              -7.000  OK
+ 27  res27.pdbqt_log.log              -6.500  OK
+ 28  res28.pdbqt_log.log              -7.100  OK
+ 29  res29.pdbqt_log.log              -6.700  OK
+ 30  res30.pdbqt_log.log              -6.900  OK
+ 31  res31.pdbqt_log.log              -6.400  OK
+ 32  res32.pdbqt_log.log              -6.400  OK
+ 33  res33.pdbqt_log.log              -6.900  OK
+ 34  res34.pdbqt_log.log              -7.400  OK
+ 35  res35.pdbqt_log.log              -5.800  OK
+ 36  res36.pdbqt_log.log              -6.300  OK
+ 37  res37.pdbqt_log.log              -5.900  OK
+ 38  res38.pdbqt_log.log              -6.500  OK
+ 39  res39.pdbqt_log.log              -6.200  OK
+ 40  res40.pdbqt_log.log              -7.200  OK
+ 41  res41.pdbqt_log.log              -6.100  OK
+ 42  res42.pdbqt_log.log              -6.200  OK
+ 43  res43.pdbqt_log.log              -6.600  OK
+ 44  res44.pdbqt_log.log              -6.800  OK
+ 45  res45.pdbqt_log.log              -6.100  OK
+ 46  res46.pdbqt_log.log              -7.700  OK
+ 47  res47.pdbqt_log.log              -6.500  OK
+ 48  res48.pdbqt_log.log              -6.200  OK
+ 49  res49.pdbqt_log.log              -6.800  OK
+ 50  res50.pdbqt_log.log              -6.200  OK
+ 51  res51.pdbqt_log.log              -6.200  OK
+ 52  res52.pdbqt_log.log              -6.300  OK
+ 53  res53.pdbqt_log.log              -7.200  OK
+ 54  res54.pdbqt_log.log              -6.700  OK
+ 55  res55.pdbqt_log.log              -6.300  OK
+ 56  res56.pdbqt_log.log              -7.700  OK
+ 57  res57.pdbqt_log.log              -6.500  OK
+ 58  res58.pdbqt_log.log              -6.500  OK
+ 59  res59.pdbqt_log.log              -6.100  OK
+ 60  res60.pdbqt_log.log              -6.300  OK
+ 61  res61.pdbqt_log.log              -6.600  OK
+ 62  res62.pdbqt_log.log              -6.100  OK
+ 63  res63.pdbqt_log.log              -6.800  OK
+ 64  res64.pdbqt_log.log              -6.600  OK
+ 65  res65.pdbqt_log.log              -5.900  OK
+ 66  res66.pdbqt_log.log              -7.300  OK
+ 67  res67.pdbqt_log.log              -6.000  OK
+ 68  res68.pdbqt_log.log              -6.100  OK
+ 69  res69.pdbqt_log.log              -6.000  OK
+ 70  res70.pdbqt_log.log              -6.900  OK
+ 71  res71.pdbqt_log.log              -6.000  OK
+ 72  res72.pdbqt_log.log              -6.000  OK
+ 73  res73.pdbqt_log.log              -6.400  OK
+ 74  res74.pdbqt_log.log              -6.700  OK
+ 75  res75.pdbqt_log.log              -7.800  OK
+ 76  res76.pdbqt_log.log              -6.700  OK
+ 77  res77.pdbqt_log.log              -6.900  OK
+ 78  res78.pdbqt_log.log              -5.900  OK
+ 79  res79.pdbqt_log.log              -6.200  OK
+ 80  res80.pdbqt_log.log              -6.000  OK
+ 81  res81.pdbqt_log.log              -5.800  OK
+ 82  res82.pdbqt_log.log              -7.700  OK
+ 83  res83.pdbqt_log.log              -6.100  OK
+ 84  res84.pdbqt_log.log              -6.000  OK
+ 85  res85.pdbqt_log.log              -6.200  OK
+ 86  res86.pdbqt_log.log              -6.000  OK
+ 87  res87.pdbqt_log.log              -6.400  OK
+ 88  res88.pdbqt_log.log              -6.500  OK
+ 89  res89.pdbqt_log.log              -6.500  OK
+ 90  res90.pdbqt_log.log              -6.300  OK
+ 91  res91.pdbqt_log.log              -6.000  OK
+ 92  res92.pdbqt_log.log              -6.100  OK
+ 93  res93.pdbqt_log.log              -6.600  OK
+ 94  res94.pdbqt_log.log              -6.100  OK
+ 95  res95.pdbqt_log.log              -6.400  OK
+ 96  res96.pdbqt_log.log              -6.500  OK
+ 97  res97.pdbqt_log.log              -6.100  OK
+ 98  res98.pdbqt_log.log              -6.000  OK
+ 99  res99.pdbqt_log.log              -6.600  OK
+100  res100.pdbqt_log.log             -8.700  OK
+
+============================================================
+Overall statistics (valid files only)
+------------------------------------------------------------
+Count valid: 100 / 100
+Best (min):  -8.700
+Worst (max): -5.800
+Mean:        -6.513
