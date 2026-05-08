@@ -11,10 +11,13 @@ if not Path(LIGAND_FILE).is_file():
     sys.exit(1)
 
 with open(LIGAND_FILE, "r") as f:
-    for line in f:
-        ligand = line.strip()
+    ligands = [line.strip() for line in f.readlines() if line.strip()]
+    for ligand in ligands:
+        print(ligand, flush=True)
+
+    for ligand in ligands:
         if ligand:
-            print(ligand)
+            print(ligand, flush=True)
             subprocess.run([
                 VINA_CMD,
                 "--config", CONFIG_FILE,
