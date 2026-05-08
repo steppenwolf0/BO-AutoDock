@@ -36,11 +36,20 @@ Instructions
 
 1. First, run the following script to verify that everything is working correctly:
 
+```bash
    python pipeline0.py
+```
 
 2. Once the pipeline check is successful, run the Bayesian Optimization docking:
-
+```bash
    python BO-AutoDock.py
+```
+
+- For the full list of command line args:
+```bash
+   python BO-AutoDock.py --help
+```
+
 --------------------------------------------------------------------
 Notes
 
