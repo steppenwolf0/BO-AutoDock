@@ -19,9 +19,6 @@ In the base folder:
   vina.exe
   vina_split.exe
 
-- Perl script:
-  runVina.pl
-
 AutoDock Vina executables can be downloaded from:
 https://vina.scripps.edu/downloads/
 --------------------------------------------------------------------
@@ -39,11 +36,20 @@ Instructions
 
 1. First, run the following script to verify that everything is working correctly:
 
+```bash
    python pipeline0.py
+```
 
 2. Once the pipeline check is successful, run the Bayesian Optimization docking:
-
+```bash
    python BO-AutoDock.py
+```
+
+- For the full list of command line args:
+```bash
+   python BO-AutoDock.py --help
+```
+
 --------------------------------------------------------------------
 Notes
 

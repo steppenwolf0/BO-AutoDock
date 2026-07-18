@@ -1,17 +1,14 @@
 import numpy as np
 import cma
-from scipy.optimize import minimize
-from scipy.optimize import Bounds
 from testFunctions import * 
 from mathFunctions import * 
-from gaussian import * 
 import sys
 from ctypes import *
-# Load DLL into memory.
 from scipy.stats import qmc
 import time
 from pandas import read_csv
 import pipeline0
+import argparse
 
 def cmaesCode():
 	Dimension=6
@@ -93,20 +90,20 @@ def generateInitialPoints(n_points, Dimension, n_points_Start):
 	return xtrain, ytrain
 
 #UCBParallel1KernelScalable
-def mainTest():
+def mainTest(args):
 	# Start timer
 	start_time = time.perf_counter()
 
-	Dimension = 3
-	n_points_Start = 5 #inital points
-	evalsMethod = 300000 #30,000 75,000 150,000 300,000
-	method = 1 #DIRECT,CMAES in the selection of the point
-	iterationsMax = 100 #100,150,300,500
-	subset = 50 #subset of points 
-	threadsParallel = 5
-	typeKernel=0#Matern 52, Exponential, Matern 32
-	runName=1#variable used to write the results
-	noiseLevel = 1e-8
+	Dimension = args.dimension
+	n_points_Start = args.n_points_start
+	evalsMethod = args.evals_method
+	method = args.method
+	iterationsMax = args.iterations_max #100,150,300,500
+	subset = args.subset #subset of points 
+	threadsParallel = args.threads_parallel
+	typeKernel = args.type_kernel #Matern 52, Exponential, Matern 32
+	runName = args.run_name #variable used to write the results
+	noiseLevel = args.noise_level
 
 	tries=threadsParallel
 	
@@ -174,9 +171,9 @@ def mainTest():
 		
 		#hllDll.showMatrix(xPoints, c_int(n_points), c_int(Dimension))
 		
-# (int n_points, int Dimension, int threadsParallel, double** xtrain,
-	# double* ytrain, int subset, int tries, int method, int typeKernel, double bestValue,
-	# int evalsMethod, int runName, double noiseLevel);
+		# (int n_points, int Dimension, int threadsParallel, double** xtrain,
+		# double* ytrain, int subset, int tries, int method, int typeKernel, double bestValue,
+		# int evalsMethod, int runName, double noiseLevel);
 		
 		
 		result=hllDll.getNextPoint(c_int(n_points), c_int(Dimension), c_int(threadsParallel), xPoints,
@@ -227,7 +224,21 @@ def mainTest():
 	return
 
 if __name__ == "__main__":
-	mainTest()  
+	parser = argparse.ArgumentParser(description="BO AutoDock optimization")
+	parser.add_argument('--dimension', type=int, default=3, help='Dimension')
+	parser.add_argument('--n_points_start', type=int, default=5, help='Initial points')
+	parser.add_argument('--evals_method', type=int, default=300000, help='Evaluations method (e.g. 30,000 75,000 150,000 300,000)')
+	parser.add_argument('--method', type=int, default=1, help='Method (0 = DIRECT, 1 = CMAES in the selection of the point)')
+	parser.add_argument('--iterations_max', type=int, default=100, help='Max iterations (e.g. 100,150,300,500)')
+	parser.add_argument('--subset', type=int, default=50, help='Subset')
+	parser.add_argument('--threads_parallel', type=int, default=5, help='Parallel threads')
+	parser.add_argument('--type_kernel', type=int, default=0, help='Kernel type (0 = Matern 52, 1 = Exponential, 2 = Matern 32)')
+	parser.add_argument('--run_name', type=int, default=1, help='Run name')
+	parser.add_argument('--noise_level', type=float, default=1e-8, help='Noise level')
+	args = parser.parse_args()
+	print("Arguments: ", args)
+
+	mainTest(args)  
 	
 	
 	
