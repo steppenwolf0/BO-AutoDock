@@ -55,3 +55,16 @@ Notes
 
 - All docking calculations are performed using AutoDock Vina.
 - The code has been tested on Windows 10 and Windows 11.
+
+
+## Citing BO-Autodock
+If you use it in your research, please use the following BibTeX entry.
+```
+@inproceedings{lopez2026evolutionary,
+  title={Evolutionary-Driven Bayesian Optimization for Automated Molecular Docking with AutoDock Vina},
+  author={Lopez-Rincon, Alejandro and Varga, Brigitta and Rojas-Velazquez, David and Tonda, Alberto},
+  booktitle={Proceedings of the Genetic and Evolutionary Computation Conference},
+  pages={1137--1145},
+  year={2026}
+}
+```
